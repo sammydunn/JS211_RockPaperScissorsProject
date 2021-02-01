@@ -86,4 +86,36 @@ if (typeof describe === 'function') {
 
 }
 
+//additional test for rps
+
+discribe('RPS unit test', function(){
+
+  it('should handle bad input', function(){
+    let actual = rockPaperScissors('Boot', "Roach");
+    let expected = "boot";
+    assert.equal(actual, expected);
+  })
+  
+  })
+  
+  
+  discribe('RPS unit test', function(){
+  
+    it('should handle heavy', function(){
+      let actual = rockPaperScissors('bick', "feather");
+      let expected = "brick";
+      assert.equal(actual,expected);
+    })
+  
+  })
+  
+  
+  discribe('RPS unis test', function(){
+  
+    it('should handle the strongest',function(){
+      let actual = rockPaperScissors('hammer', "tissue");
+      let expected = "hammer";
+      assert.equal(actual,expected)
+    })
+  })
 
